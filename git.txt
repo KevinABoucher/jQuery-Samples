@@ -1,0 +1,95 @@
+Global setup:
+ Set up git
+  git config --global user.name "Your Name"
+  git config --global user.email kevin.boucher@gmail.com
+      
+Next steps:
+  mkdir jQuery-Samples
+  cd jQuery-Samples
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:KevinABoucher/jQuery-Samples.git
+  git push -u origin master
+      
+Existing Git Repo?
+  cd existing_git_repo
+  git remote add origin git@github.com:KevinABoucher/jQuery-Samples.git
+  git push -u origin master
+      
+Importing a Subversion Repo?
+  Click here
+      
+When you're done:
+  Continue
+  
+  
+  git config --list
+git config user.name
+
+git help config # how to get full help
+
+git init
+
+git add .
+git add *.c
+git add README
+git rm aaa
+git mv aa aa
+git commit -m 'initial project version'
+git commit -a -m 'Simplify library remove non essential files'
+git status
+git push origin master
+
+git remote show origin
+
+git tag
+git tag -l 'v0.1.9.0'
+
+# Annotated tag
+git tag -a v0.1.9.0 -m 'v0.1.9.0'
+# Signed Annotated tag
+git tag -s v1.5 -m 'my signed 1.5 tag'
+git show v0.1.9.0
+
+
+git add .
+git commit -m 'Update markdown'
+git remote add origin git@github.com:KevinABoucher/jQuery-Samples.git
+git push -u origin master
+
+
+git config --list
+git config user.name
+
+git help config # how to get full help
+
+git init
+
+git add .
+git add *.c
+git add README
+git rm aaa
+git mv aa aa
+git commit -m 'initial project version'
+git commit -a -m 'Simplify library remove non essential files'
+git status
+git push origin master
+
+git remote show origin
+
+git tag
+git tag -l 'v0.1.9.0'
+
+# Annotated tag
+git tag -a v0.1.9.0 -m 'v0.1.9.0'
+# Signed Annotated tag
+git tag -s v1.5 -m 'my signed 1.5 tag'
+git show v0.1.9.0
+
+
+git add .
+git commit -m 'Update markdown'
+git remote add origin git@github.com:KevinABoucher/jQuery-Samples.git
+git push -u origin master
