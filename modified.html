@@ -62,13 +62,13 @@ jModified is a jQuery plugin that helps identify when fields have been modified.
 
   <script> 
 	$(function() {
-		$("input").modified( { onModified: setDirty } );
+		$("input").modified( { onModified: valueChanged } );
 	});
 	
 	var isPageDirty = false;
-	function setDirty(id) {
+	function valueChanged(id, previousVal, newVal) {
 	  isPageDirty = true;
-	  alert("Page is dirty.  Changed: " + id);
+	  alert('The page is dirty.  The value for ' + id + ' has changed from ' + previousVal + " to " + newVal);
 	}
   </script>
 

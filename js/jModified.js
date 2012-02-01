@@ -2,20 +2,21 @@
  $.fn.modified = function(options) {
     
    var defaults = {  
-     onModified: function(v) { alert(v + ' has changed') }  
+     onModified: function(id, previousVal, newVal) { alert('The value for ' + id + ' has changed from ' + previousVal + " to " + newVal ); }  
    };  
     
    var options = $.extend(defaults, options);  
   
-   var originalvalue = this.val();
-   var newValue = this.val();
+   this.each(function() {
+     $(this).data('originalValue', $(this).val());
+   });
   
   return this.change(function() {
-   obj = $(this);
-   newValue = obj.val();
+   var newValue = $(this).val();
+   var originalValue = $(this).data('originalValue');
    
-   if(newValue != originalvalue)
-     options. onModified(obj.attr("id"));
+   if(newValue != originalValue)
+     options.onModified($(this).attr("id"), originalValue, newValue);
    
   });
  };
