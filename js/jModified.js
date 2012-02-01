@@ -2,7 +2,8 @@
  $.fn.modified = function(options) {
     
    var defaults = {  
-     onModified: function(id, previousVal, newVal) { alert('The value for ' + id + ' has changed from ' + previousVal + " to " + newVal ); }  
+     onModified: function(id, previousVal, newVal) { 
+     	alert('The value for ' + id + ' has changed from ' + previousVal + " to " + newVal ); }  
    };  
     
    var options = $.extend(defaults, options);  
