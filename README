@@ -3,3 +3,5 @@ jQuery-Samples
 A collection of jQuery samples to try new things out
 
     - index.html: It is always desirable to prevent users from making typos.  One tool that is great at preventing this is the jQuery AutoComplete.  However, sometimes you want to drive it off of client entered data and not via a constant array or ajax call.  Let's look at an example where we populate the AutoComplete via an existing TextArea on the page.
+    
+    - modified.html: Demonstrates the jModified jQuery plugin, to tell you when a field has been modified from it's original value.
